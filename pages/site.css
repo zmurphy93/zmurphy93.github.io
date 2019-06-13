@@ -165,13 +165,13 @@ body{
   padding: 0.7em 0;
 }
 
-.containers{
+.container{
   padding: 1em 0;
   float: left;
   width: 25%;
 }
 
-.containers .title{
+.container .title{
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
