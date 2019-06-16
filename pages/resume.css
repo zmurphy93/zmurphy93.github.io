@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: #282c34;
+}
+
+.resume-paper{
+  width: 920px;
+  padding: 60px 80px 60px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 1px #606060;
+}
+.name{
+  color: #1e868c;
+  font-weight: 600;
+  text-align: center;
+}
+.contact-row {
+text-align: center;
+}
+
+.section-title{
+font-weight: 600;
+color: #1e868c;
+}
+
+.section-row-content-jobtitle {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.section-row-content-companytitle{
+  font-size: 18px;
+  color: #333;
+}
+
+.skill{
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  margin-bottom: 3px;
+  display: inline-block;
+  background-color: #1e868c;
+}
