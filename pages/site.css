@@ -171,13 +171,22 @@ font-size: 18px;
   float: left;
   width: 25%;
 }
-
+.row{
+  margin-right: 0px;
+}
 .container .title{
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
 }
+.project-content{
+  border-style: solid;
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
 
+
+}
 .content {
   position: relative;
   width: 90%;
@@ -249,4 +258,10 @@ font-size: 18px;
 
 .fadeIn-top{
   top: 20%;
+}
+
+
+.row-content{
+
+  margin-bottom: 50px;
 }
