@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*******************/
+/**Navigation Bar**/
+/*****************/
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40ced6;
+}
+
+li {
+  float: left;
+  margin-bottom: 0;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+li a:hover:not(.active) {
+  background-color: #1e868c;
+}
+
+.active {
+  background-color: #1e868c;
+}
+/************************/
+/**"Jumbotron" Content**/
+/**********************/
+.top-box {
+  margin: 0;
+  background-color: #282c34;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.top-box-name {
+  color: #40ced6;
+  text-align: center;
+  font-size: 50px;
+}
+.top-box-text{
+  color: #d9d9db;
+  text-align: center;
+  font-size: 20px;
+}
+
+.myphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #424244;
+}
+
+/***************************/
+/**Classifier Info Content**/
+/***************************/
+.row{
+  background-color: #bababa;
+  height: 100%;
+  margin-bottom:0px;
+}
+
+.vertical-algorithm-menu {
+  font-size: 20px;
+  margin-right:-30px;
+  height: 100%;
+}
+
+.vertical-algorithm-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  margin: 0px;
+  overflow: auto;
+  font-size: 20px;
+}
+
+.vertical-algorithm-menu a.active {
+  background-color: #1e868c;
+  color: white;
+  margin: 0px;
+}
+
+.algorithm-info{
+  font-size: 18px;
+  max-width: 950px;
+  padding: 0px;
+  background-color: #fff;
+  color: #333;
+  margin-left: 0px;
+}
+
+.headers{
+background-color: black;
+color: white;
+padding: 20px;
+margin: 0px;
+
+}
+#KNearestNeighbors {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#LogisticRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#LDA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#QDA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#NaiveBayes {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#SVM {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#DecisionTree {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#RandomForest {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#AdaBoost {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#GradientBoost {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#LinearRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#LassoRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#RidgeRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#PCA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#FactorAnalysis {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#LLE {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#TSNE {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#KMeansClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#DBSCAN {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#SpectralClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#HierarchicalClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+
+#Apriori {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#FPGrowth {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#QLearning {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#DeepQNetwork {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#SARSA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+.menu.clicked{
+  background-color: #1e868c;
+}

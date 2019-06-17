@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
 /*******************/
 /**Navigation Bar**/
 /*****************/
@@ -11,7 +17,6 @@ ul {
 
 li {
   float: left;
-  font-family: Arial, sans-serif;
   margin-bottom: 0;
 
 }
@@ -20,7 +25,6 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  font-family: Arial, sans-serif;
   padding: 14px 16px;
   text-decoration: none;
   margin-bottom: 0;
@@ -47,13 +51,11 @@ li a:hover:not(.active) {
 
 .top-box-name {
   color: #40ced6;
-  font-family: San-serif, Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 50px;
 }
 .top-box-text{
   color: #d9d9db;
-  font-family: San-serif, Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 20px;
 }
@@ -141,7 +143,13 @@ font-size: 18px;
 /**Data Sci Content**/
 /********************/
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+.banner-heading{
+  font-size: 30px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-bottom: 3px solid gray;
+}
 
 *, *:before, *:after{
   margin: 0;
@@ -149,12 +157,6 @@ font-size: 18px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing:border-box;
   box-sizing: border-box;
-}
-
-body{
-  background: #f9f9f9;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
 }
 
 .main-title{
