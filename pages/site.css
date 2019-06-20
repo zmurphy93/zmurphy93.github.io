@@ -80,20 +80,21 @@ li a:hover:not(.active) {
 /****************************/
 /**Bottom Section and Text**/
 /***************************/
-.col-sm-8 {
+.col-sm-7 {
   margin-bottom: 30px;
 }
 .bio-heading{
-padding-left: 150px;
+
 font-weight: 700;
-margin-left: 15%;
+
 }
 .bio {
 font-size: 18px;
-padding-left: 150px;
-margin-left: 15%;
 }
 
+.bottom-bio{
+  padding-bottom: 4%
+}
 /*******************/
 /**Contact Icons***/
 /******************/
@@ -111,7 +112,7 @@ font-size: 18px;
   padding-bottom: 15px;
 }
 
-.col-sm-4{
+.col-sm-3{
   margin-bottom: 30px;
 }
 /* Style all font awesome icons */
