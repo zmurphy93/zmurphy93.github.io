@@ -1,65 +1,64 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Classification and Regression</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classifiers and Regressors</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="site.css">
 
     <script src = "main.js"></script>
 
-    <link rel="stylesheet" href="algorithms.css">
   </head>
   <body>
-    <ul>
-      <li><a href=https://zmurphy93.github.io><strong>Home</strong></a></li>
-      <li><a class="active" href="/pages/datasci.html"><strong>Data Sci. Projects</strong></a></li>
-      <li><a href="/pages/meteorology.html"><strong>Meteorological Tools</strong></a></li>
-      <li><a href="/pages/resume.html"><strong>Resume</strong></a></li>
-    </ul>
-  <!-- Block that contains my name, photo, and position -->
-      <div class="top-box">
-          <a href>
-          <div>
-          </a>
-        </div>
-        <div>
-          <h1 class="top-box-name"><strong>Classification and Regression Algorithms</strong></h1>
-        </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+    <div class="container-fluid navigationbar">
+      <ul class="nav navbar-nav">
+        <li><a  href="https://zmurphy93.github.io"><strong>Home</strong></a></li>
+        <li><a href="/pages/datasci.html"><strong>Data Sci. Projects</strong></a></li>
+        <li><a class="active" href="/pages/ml.html"><strong>Machine Learning</strong></a></li>
+        <li><a href="/pages/meteorology.html"><strong>Meteorological Tools</strong></a></li>
+        <li><a href="/pages/resume.html"><strong>Resume</strong></a></li>
+       </ul>
       </div>
+    </nav>
+  <!-- Block that contains my name, photo, and position -->
+  <div class="jumbotron top-box">
+    <h1 class="top-box-name"><strong>Classification and Regression Algorithms</strong></h1>
+  </div>
+  <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3">
-          <div class="vertical-algorithm-menu">
-          <h3 class="headers">Classification</h3>
-          <a class="menu" data-item="#KNearestNeighbors" id="KNearestNeighbors-menu-item">K-Nearest Neighbors</a>
-          <a class="menu" data-item="#LogisticRegression" id = "LogisticRegression-menu-item">Logistic Regression</a>
-          <a class="menu" data-item="#LDA" id = "LDA-menu-item">Linear Discriminant Analysis</a>
-          <a class="menu" data-item="#QDA" id ="QDA-menu-item">Quadratic Discriminant Analysis</a>
-          <a class="menu" data-item="#NaiveBayes" id="NaiveBayes-menu-item">Naive Bayes</a>
-          <a class="menu" data-item="#SVM" id="SVM">Support Vector Machine</a>
-          <a class="menu" data-item="#DecisionTree" id = "DecisionTree-menu-item">Decision Tree</a>
-          <a class="menu" data-item="#RandomForest" id = "RandomForest-menu-item">Random Forest</a>
-          <a class="menu" data-item="#AdaBoost" id = "Adaboost-menu-item">AdaBoost</a>
-          <a class="menu" data-item="#GradientBoost" id = "GradientBoost-menu-item">Gradient-Boosted Trees</a>
-          <h3 class="headers">Regression</h3>
-          <a class="menu" data-item="#LinearRegression" id="LinearRegression-menu-item">Linear Regression</a>
-          <a class="menu" data-item="#LassoRegression" id = "LassoRegression-menu-item">Lasso Regression</a>
-          <a class="menu" data-item="#RidgeRegression" id = "RidgeRegression-menu-item">Ridge Regression</a></div>
+          <div class = "list-group">
+          <h3 class="list-group-item-heading headers">Classification</h3>
+          <a class="list-group-item menu" data-item="#KNearestNeighbors" id="KNearestNeighbors-menu-item">K-Nearest Neighbors</a>
+          <a class="list-group-item menu" data-item="#LogisticRegression" id = "LogisticRegression-menu-item">Logistic Regression</a>
+          <a class="list-group-item menu" data-item="#LDA" id = "LDA-menu-item">Linear Discriminant Analysis</a>
+          <a class="list-group-item menu" data-item="#QDA" id ="QDA-menu-item">Quadratic Discriminant Analysis</a>
+          <a class="list-group-item menu" data-item="#NaiveBayes" id="NaiveBayes-menu-item">Naive Bayes</a>
+          <a class="list-group-item menu" data-item="#SVM" id="SVM-menu-item">Support Vector Machine</a>
+          <a class="list-group-item menu" data-item="#DecisionTree" id = "DecisionTree-menu-item">Decision Tree</a>
+          <a class="list-group-item menu" data-item="#RandomForest" id = "RandomForest-menu-item">Random Forest</a>
+          <a class="list-group-item menu" data-item="#AdaBoost" id = "Adaboost-menu-item">AdaBoost</a>
+          <a class="list-group-item menu" data-item="#GradientBoost" id = "GradientBoost-menu-item">Gradient-Boosted Trees</a>
+          <h3 class="list-group-item-heading headers">Regression</h3>
+          <a class="list-group-item menu" data-item="#LinearRegression" id="LinearRegression-menu-item">Linear Regression</a>
+          <a class="list-group-item menu" data-item="#LassoRegression" id = "LassoRegression-menu-item">Lasso Regression</a>
+          <a class="list-group-item menu" data-item="#RidgeRegression" id = "RidgeRegression-menu-item">Ridge Regression</a>
+        </div>
       </div>
 <div class = "col-sm-9">
-  <div class="algorithm-info">
   <div id="KNearestNeighbors">
-    <div class = "description">
       <h2><strong>K-Nearest Neighbors</strong></h2>
       <p>K-Nearest Neighbors Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -67,9 +66,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="LogisticRegression">
-    <div class = "description">
       <h2><strong>Logistic Regression</strong></h2>
       <p>Logistic Regression Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -77,9 +74,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="LDA">
-    <div class = "description">
       <h2><strong>Linear Discriminant Analysis</strong></h2>
       <p>LDA Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -87,9 +82,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="QDA">
-    <div class = "description">
       <h2><strong>Quadratic Discriminant Analysis</strong></h2>
       <p>QDA Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -97,9 +90,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="NaiveBayes">
-    <div class = "description">
       <h2><strong>Naive Bayes</strong></h2>
       <p>Naive Bayes Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -107,19 +98,15 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="SVM">
-    <div class = "description">
       <h2><strong>Support Vector Machine</strong></h2>
       <p>Support Vector Machine Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
       <h3><strong>Training and Hyperparameters</strong></h3>
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
-    </div>
   </div>
   <div id="DecisionTree">
-    <div class = "description">
       <h2><strong>Decision Tree</strong></h2>
       <p>Decision Tree Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -127,9 +114,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="RandomForest">
-    <div class = "description">
       <h2><strong>Random Forest</strong></h2>
       <p>Random Forest Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -137,9 +122,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="AdaBoost">
-    <div class = "description">
       <h2><strong>AdaBoost</strong></h2>
       <p>AdaBoost Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -147,9 +130,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="GradientBoost">
-    <div class = "description">
       <h2><strong>Gradient-Boosted Trees</strong></h2>
       <p>GBT Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -157,9 +138,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="LinearRegression">
-    <div class = "description">
       <h2><strong>Linear Regression</strong></h2>
       <p>Linear Regression Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -167,9 +146,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="LassoRegression">
-    <div class = "description">
       <h2><strong>Lasso Regression</strong></h2>
       <p>Lasso Regression Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -177,9 +154,7 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="RidgeRegression">
-    <div class = "description">
       <h2><strong>RidgeRegression</strong></h2>
       <p>Ridge Regression Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>

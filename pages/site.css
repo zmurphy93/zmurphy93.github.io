@@ -3,7 +3,6 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
-
 /*******************/
 /**Navigation Bar**/
 /*****************/
@@ -18,7 +17,6 @@ ul {
 li {
   float: left;
   margin-bottom: 0;
-
 }
 
 li a {
@@ -76,7 +74,6 @@ li a:hover:not(.active) {
   border-width: 5px;
   border-color: #424244 !important;
 }
-
 /****************************/
 /**Bottom Section and Text**/
 /***************************/
@@ -115,7 +112,7 @@ font-size: 18px;
 .col-sm-3{
   margin-bottom: 30px;
 }
-/* Style all font awesome icons */
+
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -125,12 +122,9 @@ font-size: 18px;
   border-radius:50%;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
 
 /* Facebook */
 .fa-linkedin {
@@ -148,11 +142,9 @@ font-size: 18px;
   background: #282c34;
   color: white;
 }
-
 /********************/
-/**Data Sci Content**/
+/**Data Sci and Meteorology Pages Content**/
 /********************/
-
 .banner-heading{
   font-size: 30px;
   text-align: left;
@@ -160,118 +152,194 @@ font-size: 18px;
   padding-left: 30px;
   border-bottom: 3px solid gray;
 }
-
-*, *:before, *:after{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
-  box-sizing: border-box;
-}
-
-.main-title{
-  color: #2d2d2d;
-  text-align: center;
-  text-transform: capitalize;
-  padding: 0.7em 0;
-}
-
-.container{
-  padding: 0;
-  float: left;
-  width: 25%;
-}
-.row{
-  margin-right: 0px;
-}
-.container .title{
-  color: #1a1a1a;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.project-content{
-  border-style: solid;
-  width: 300px;
-  height: 300px;
-  margin-left: 50px;
-
-
-}
-.content {
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content:hover .content-overlay{
-  opacity: 1;
-}
-
-.project-image{
-  width: 100%;
+/********************/
+/**ML Page Content**/
+/********************/
+.img-responsive{
   border: 1px solid black;
-
 }
 
-.content-details {
-  position: absolute;
+#algorithm-menu{
+  padding-bottom: 5%;
+}
+
+.algorithm-item{
+  font-weight: 700;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
+.list-group{
+  padding-left:0px;
+  margin-left:0px;
 }
 
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
+.menu{
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+/**********************************/
+/**Classifiers/Regressors Content**/
+/**********************************/
+#KNearestNeighbors {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
 }
 
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
+#LogisticRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#LDA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#QDA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#NaiveBayes {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#SVM {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#DecisionTree {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#RandomForest {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#AdaBoost {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#GradientBoost {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
 }
 
-.fadeIn-top{
-  top: 20%;
+#LinearRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
 }
 
+#LassoRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
 
-.row-content{
+#RidgeRegression {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
 
-  margin-bottom: 50px;
+.menu.clicked{
+  background-color: #1e868c;
+}
+
+.headers{
+background-color: black;
+padding: 10px;
+margin: 0px;
+text-align: center;
+color: white;
+}
+/************************/
+/**Unsupervised Content**/
+/************************/
+#PCA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#FactorAnalysis {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#LLE {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#TSNE {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#KMeansClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#DBSCAN {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#SpectralClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#HierarchicalClustering {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+#Apriori {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#FPGrowth {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+
+/**************************/
+/**Deep Learning Content**/
+/*************************/
+/**********************************/
+/**Reinforcement Learning Content**/
+/**********************************/
+#QLearning {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#DeepQNetwork {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
+}
+#SARSA {
+  display: none;
+  padding-top:50px;
+  padding-left:50px;
 }

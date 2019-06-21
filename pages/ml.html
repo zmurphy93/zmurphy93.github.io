@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Science</title>
+    <title>Machine Learning</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
@@ -42,64 +42,39 @@
       </div>
 </div>
 
+<!--- Select from the four algorithm types below --->
 
-<div class = "row-content">
-<div class="row">
-<div class = "ml-scratch">
-  <div class="container">
-    <h3 class="title">Classification & Regression</h3>
-    <div class="content">
-      <a href="classifiersregressors.html" target="_blank">
-        <div class="content-overlay"></div>
-        <img class="project-image" src="classifier_image.png">
-        <div class="content-details fadeIn-top">
-          <h3 class="content-title">These algorithms learn from labeled data to place new observations into categories or predict continuous values.</h3>
+<div class="container-fluid algorithms" id="algorithm-menu">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4 class="algorithm-item">Classification/Regression</h4>
+        <a href="classifiersregressors.html">
+            <img src="classifier_image.png" class="img-responsive">
+        </a>
         </div>
-      </a>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4 class="algorithm-item">Unsupervised Learning<h4>
+        <a href="unsupervised.html">
+            <img  src="clustering_image.png" class="img-responsive">
+        </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4 class="algorithm-item">Deep Learning<h4>
+        <a href="deeplearning.html">
+            <img src="neural_net_image.png" class="img-responsive">
+        </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4 class="algorithm-item">Reinforcement Learning<h4>
+        <a href="reinforcement.html">
+            <img src="reinforcement_image.png" class="img-responsive">
+        </a>
+        </div>
     </div>
   </div>
-
-  <div class="container">
-    <h3 class="title">Unsupervised</h3>
-    <div class="content">
-      <a href="unsupervised.html" target="_blank">
-        <div class="content-overlay"></div>
-        <img class="project-image" src="clustering_image.png">
-        <div class="content-details fadeIn-top">
-          <h3>Algorithms in this category don't require labeled data and are capable of uncovering hidden relationships within datasets.</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="container">
-    <h3 class="title">Deep Learning</h3>
-    <div class="content">
-      <a href="deeplearning.html" target="_blank">
-        <div class="content-overlay"></div>
-        <img class="project-image" src="neural_net_image.png">
-        <div class="content-details fadeIn-top">
-          <h3>Using neural networks, a variety of complex machine learning tasks can be solved using a model inspired from the brain.</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="container">
-    <h3 class="title">Reinforcement Learning</h3>
-    <div class="content">
-      <a href="reinforcement.html" target="_blank">
-        <div class="content-overlay"></div>
-        <img class="project-image" src="reinforcement_image.png">
-        <div class="content-details fadeIn-top">
-          <h3>These algorithms continuously learn to improve their abilities to perform tasks.</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 </main>
 </body>
 </html>

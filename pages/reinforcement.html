@@ -1,54 +1,52 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reinforcement Learning</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="site.css">
 
     <script src = "main.js"></script>
 
-    <link rel="stylesheet" href="algorithms.css">
   </head>
   <body>
-    <ul>
-      <li><a href=https://zmurphy93.github.io><strong>Home</strong></a></li>
-      <li><a class="active" href="/pages/datasci.html"><strong>Data Sci. Projects</strong></a></li>
-      <li><a href="/pages/meteorology.html"><strong>Meteorological Tools</strong></a></li>
-      <li><a href="/pages/resume.html"><strong>Resume</strong></a></li>
-    </ul>
-  <!-- Block that contains my name, photo, and position -->
-      <div class="top-box">
-          <a href>
-          <div>
-          </a>
-        </div>
-        <div>
-          <h1 class="top-box-name"><strong>Reinforcement Learning</strong></h1>
-        </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+    <div class="container-fluid navigationbar">
+      <ul class="nav navbar-nav">
+        <li><a  href="https://zmurphy93.github.io"><strong>Home</strong></a></li>
+        <li><a href="/pages/datasci.html"><strong>Data Sci. Projects</strong></a></li>
+        <li><a class="active" href="/pages/ml.html"><strong>Machine Learning</strong></a></li>
+        <li><a href="/pages/meteorology.html"><strong>Meteorological Tools</strong></a></li>
+        <li><a href="/pages/resume.html"><strong>Resume</strong></a></li>
+       </ul>
       </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="vertical-algorithm-menu">
-          <a class="menu" data-item="#QLearning" id="QLearning-menu-item">Q-Learning</a>
-          <a class="menu" data-item="#DeepQNetwork" id = "DeepQNetwork-menu-item">Deep Q-Network</a>
-          <a class="menu" data-item="#SARSA" id = "SARSA-menu-item">SARSA</a>
+    </nav>
+    <div class="jumbotron top-box">
+      <h1 class="top-box-name"><strong>Reinforcement Learning Algorithms</strong></h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class = "list-group">
+            <h3 class="list-group-item-heading headers">Reinforcement Learning</h3>
+            <a class="list-group-item menu" data-item="#QLearning" id="QLearning-menu-item">Q-Learning</a>
+            <a class="list-group-item menu" data-item="#DeepQNetwork" id = "DeepQNetwork-menu-item">Deep Q-Network</a>
+            <a class="list-group-item menu" data-item="#SARSA" id = "SARSA-menu-item">SARSA</a>
         </div>
       </div>
 <div class = "col-sm-9">
-  <div class="algorithm-info">
   <div id="QLearning">
-    <div class = "description">
       <h2><strong>Q-Learning</strong></h2>
       <p>Q-Learning Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
@@ -56,26 +54,21 @@
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
     </div>
-  </div>
   <div id="DeepQNetwork">
-    <div class = "description">
       <h2><strong>Deep Q-Network</strong></h2>
       <p>Deep Q-Network Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
       <h3><strong>Training and Hyperparameters</strong></h3>
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
-    </div>
   </div>
   <div id="SARSA">
-    <div class = "description">
       <h2><strong>SARSA</strong></h2>
       <p>SARSA Info Coming Soon!</p>
       <h3><strong>Background</strong></h3>
       <h3><strong>Training and Hyperparameters</strong></h3>
       <h3><strong>Predictions</strong></h3>
       <h3><strong>Pros and Cons</strong></h3>
-    </div>
   </div>
   </div>
 </div>
