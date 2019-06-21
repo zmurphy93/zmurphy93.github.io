@@ -41,7 +41,6 @@ li a:hover:not(.active) {
   background-color: #40ced6 !important;
   margin-bottom: 0px;
 }
-
 /************************/
 /**"Jumbotron" Content**/
 /**********************/
@@ -73,11 +72,10 @@ li a:hover:not(.active) {
 /****************************/
 /**Bottom Section and Text**/
 /***************************/
-.col-sm-7 {
+.col-sm-8 {
   margin-bottom: 30px;
 }
 .bio-heading{
-
 font-weight: 700;
 
 }
@@ -101,6 +99,7 @@ font-size: 18px;
 }
 
 .contact-heading{
+  text-align: center;
   font-weight: 700;
   padding-bottom: 15px;
 }
