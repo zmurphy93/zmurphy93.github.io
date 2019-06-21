@@ -3,7 +3,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /*******************/
 /**Navigation Bar**/
