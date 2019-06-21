@@ -178,6 +178,10 @@ font-size: 18px;
   font-weight: 700;
   font-size: 18px;
 }
+.algorithm_select {
+  margin-left: 0%;
+  padding-left:0%;
+}
 /**********************************/
 /**Classifiers/Regressors Content**/
 /**********************************/
