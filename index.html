@@ -4,34 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Murphy</title>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- My own CSS -->
-    <link rel="stylesheet" href="pages/site.css">
+    <link rel="stylesheet" href="site.css">
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-default">
-    <div class="container-fluid navigationbar">
-      <ul class="nav navbar-nav">
-        <li><a class="active" href="https://zmurphy93.github.io"><strong>Home</strong></a></li>
-        <li><a href="/pages/datasci.html"><strong>Data Sci. Projects</strong></a></li>
-        <li><a href="/pages/ml.html"><strong>Machine Learning</strong></a></li>
-        <li><a href="/pages/meteorology.html"><strong>Meteorological Tools</strong></a></li>
-        <li><a href="/pages/resume.html"><strong>Resume</strong></a></li>
-       </ul>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ml">Machine Learning</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+      </ul>
+    </div>
+</nav>
   <!-- Jumbotron that contains my name, photo, and position -->
   <div class="jumbotron top-box jumbotron-fluid">
     <div class="container-fluid">
-    <img src="zmurphy.jpg" class="img-circle myphoto">
+    <img src="images/zmurphy.jpg" class="img-circle myphoto">
     <h1 class="top-box-name"><strong>Zach Murphy</strong></h1>
     <p class = "top-box-text">Meteorologist<br>
     Budding Machine Learning and Data Science Enthusiast</p>
@@ -39,10 +56,8 @@
 </div>
   <!-- Two columns: First one contains a bio, Second one contains links to social media stuff. -->
         <!-- Example row of columns -->
-  <div class="container-fluid">
-        <div class="row bottom-bio">
-          <div class="col-xs-8 bio">
-            <h3 class="bio-heading">About Me</h3>
+  <h1 class="site-heading" id="aboutme">About Me</h1>
+  <div class="container-fluid text-center bio" >
               Welcome! I am an operational meteorologist, forecasting the weather in the Northeast United States.
               I received my M.S. in Atmospheric Sciences from the University at Albany, SUNY and a B.S. in Atmospheric
               Sciences and a Certificate in Mathematics from the University of Wisconsin - Madison. Intensive scientific research and
@@ -55,31 +70,91 @@
               projects shown here use meteorology as an inspiration.<br><br>
 
               Feel free to take a peek at some of my projects above and ask me any questions!
+      </div>
+      <h1 class="site-heading" id="skills">Skills</h1>
+      <div class="container-fluid skills" >
+        <div class="card skill-card">
+            <div class="card-content">
+              <h2 class="tech-type">Programming and Web Development</h2>
+              <div class="row text-center tech-skills">
+                <div class="col s4 m2"><img alt="" src="images/html5.png" class="responsive-img">HTML5</div>
+                <div class="col s4 m2"><img alt="" src="images/bootstrap.png" class="responsive-img">Bootstrap</div>
+                <div class="col s4 m2"><img alt="" src="images/javascript.png" class="responsive-img">Javascript</div>
+                <div class="col s4 m2"><img alt="" src="images/php.png" class="responsive-img">PHP</div>
+                <div class="col s4 m2"><img alt="" src="images/python.png" class="responsive-img">Python</div>
+              </div>
+            </div>
           </div>
-          <div class= "col-xs-3">
-            <h3 class = "contact-heading">Contact</h3>
-            <div class="icons">
-              <div class="row" id="contact-icon">
+          <div class="card skill-card">
+              <div class="card-content">
+                <h2 class="tech-type">Development Frameworks</h2>
+                <div class="row text-center tech-skills">
+                  <div class="col s4 m2"><img alt="" src="images/cake-php.png" class="responsive-img">Cake (PHP)</div>
+                  <div class="col s4 m2"><img alt="" src="images/flask.png" class="responsive-img">Flask (Python)</div>
+                  <div class="col s4 m2"><img alt="" src="images/dash.png" class="responsive-img">Plotly-Dash (Python)</div>
+                </div>
+              </div>
+            </div>
+          <div class="card skill-card">
+              <div class="card-content">
+                <h2 class="tech-type">Data Visualization, Analysis, and Machine Learning</h2>
+                <div class="row text-center tech-skills">
+                  <div class="col s4 m2"><img alt="" src="images/pandas.png" class="responsive-img">Pandas</div>
+                  <div class="col s4 m2"><img alt="" src="images/sklearn.png" class="responsive-img">Scikit-Learn</div>
+                  <div class="col s4 m2"><img alt="" src="images/tf.png" class="responsive-img">TensorFlow</div>
+                  <div class="col s4 m2"><img alt="" src="images/keras.png" class="responsive-img">Keras</div>
+                </div>
+              </div>
+            </div>
+    </div>
+    <h1 class="site-heading"  id="ml">Machine Learning Algorithms</h1>
+      <div class="container-fluid">
+            <div class="row">
+                  <p class = "banner-heading"> <strong>Machine Learning |</strong> Algorithms created without special modules.</p>
+            </div>
+      </div>
+      <!--- Select from the four algorithm types below --->
+      <div class="container-fluid">
+        <div class="card">
+            <div class="card-content">
+              <div class="row text-center">
+                <div class="col s4 m2 algorithm-type"><img alt="" src="images/classifier_image.png" class="responsive-img algorithm">Supervised Learning</div>
+                <div class="col s4 m2 algorithm-type"><img alt="" src="images/clustering_image.png" class="responsive-img algorithm">Unsupervised Learning</div>
+                <div class="col s4 m2 algorithm-type"><img alt="" src="images/neural_net_image.png" class="responsive-img algorithm">Deep Learning</div>
+                <div class="col s4 m2 algorithm-type"><img alt="" src="images/reinforcement_image.png" class="responsive-img algorithm">Reinforcement Learning</div>
+              </div>
+            </div>
+          </div>
+    </div>
+        <h1 class="site-heading" id ="contact">Contact</h1>
+      <div class="container-fluid">
+        <div class="row">
+              <div class= "col-sm-4">
+              <div  id="contact-icon">
                     <a href="https://www.linkedin.com/in/zacharybmurphy/">
-                      <i class="fa fa-linkedin"></i>
+                      <i class="fa fa-linkedin fa-4x"></i>
                       <span>LinkedIn</span>
                     </a>
                     </div>
-              <div class="row" id="contact-icon">
-                    <a href="https://www.linkedin.com/in/zacharybmurphy/">
-                      <i class="fa fa-github"></i>
+                  </div>
+              <div class= "col-sm-4">
+              <div id="contact-icon">
+                    <a href="https://www.github.com/zmurphy93/">
+                      <i class="fa fa-github fa-4x"></i>
                       <span>Github</span>
                     </a>
                     </div>
-              <div class="row" id="contact-icon">
+                  </div>
+              <div class = "col-sm-4">
+              <div id="contact-icon">
                     <a href="mailto:zmurphy93@gmail.com">
-                      <i class="fa fa-envelope"></i>
+                      <i class="fa fa-envelope fa-4x"></i>
                       <span>Email</span>
                     </a>
                 </div>
+              </div>
           </div>
         </div>
-        </div>
-      </div> <!-- /container -->
+      </div>
   </body>
 </html>

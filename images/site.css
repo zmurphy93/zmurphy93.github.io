@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+/*******************/
+/**Navigation Bar**/
+/*****************/
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #6710a5 !important;
+}
+
+li {
+  float: left;
+  margin-bottom: 0;
+}
+
+li a {
+  display: block;
+  font-size: 18px;
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+li a:hover:not(.active) {
+  background-color: #7e44af !important;
+}
+
+.active {
+  background-color: #7e44af !important;
+}
+
+.navbar{
+  background-color: #6710a5 !important;
+  margin-bottom: 0px;
+}
+
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+/************************/
+/**"Jumbotron" Content**/
+/**********************/
+.top-box {
+  margin: 0;
+  background-color: black;
+}
+
+.top-box-name {
+  color: #6710a5 !important;
+  text-align: center;
+  font-size: 50px;
+}
+.top-box-text{
+  color: #d9d9db !important;
+  text-align: center;
+  font-size: 20px;
+}
+
+.myphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #424244 !important;
+}
+/****************************/
+/**Bottom Section and Text**/
+/***************************/
+.col-sm-8 {
+  margin-bottom: 30px;
+}
+.site-heading{
+font-weight: 700;
+text-align: center;
+background-color: #6710a5;
+color: white;
+margin:0;
+padding-bottom: 20px;
+padding-top:20px;
+}
+.bio {
+padding-bottom: 4%;
+margin-top: 30px;
+font-size: 24px;
+}
+/*******************/
+/**Contact Icons***/
+/******************/
+#contact-icon{
+  padding-left:150px;
+  padding-top:10px;
+  padding-bottom:30px;
+}
+
+.skills{
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+.tech-type{
+  font-weight: 900px;
+}
+
+.tech-skills{
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 24px;
+}
+.skill-card{
+  border:0px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.contact-heading{
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.icon-placement{
+  text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius:50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-linkedin {
+  background: #282c34;
+  color: white;
+}
+
+/* Twitter */
+.fa-github {
+  background: #282c34;
+  color: white;
+}
+
+.fa-envelope {
+  background: #282c34;
+  color: white;
+}
+/********************/
+/**Data Sci and Meteorology Pages Content**/
+/********************/
+.banner-heading{
+  font-size: 30px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-bottom: 3px solid gray;
+  text-align: left;
+}
+
+.responsive-img {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 24px;
+}
+
+.algorithm-type{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.algorithm{
+max-height:250px;
+max-width:100%;
+border: 2px solid black;
+}
+/********************/
+/**ML Menu Content***/
+/********************/
+.img-responsive{
+  border: 1px solid black;
+}
+
+#algorithm-menu{
+  padding-bottom: 5%;
+}
+
+.algorithm-item{
+  font-weight: 700;
+  text-align: center;
+}
+
+.list-group{
+  padding-left:0px;
+  margin-left:0px;
+}
+
+.menu{
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+.algorithm_select {
+  margin-left: 0%;
+  padding-left:0%;
+}
