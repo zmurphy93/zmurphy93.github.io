@@ -124,6 +124,7 @@ font-size: 24px;
   border:0px;
   padding-top:20px;
   padding-bottom:20px;
+  margin-bottom:2%;
 }
 .contact-heading{
   text-align: center;
@@ -224,4 +225,8 @@ border: 2px solid black;
 .algorithm_select {
   margin-left: 0%;
   padding-left:0%;
+}
+.media {
+  font-size: 24px;
+  text-align: center;
 }
