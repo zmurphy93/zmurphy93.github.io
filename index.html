@@ -18,15 +18,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- My own CSS -->
     <link rel="stylesheet" href="site.css">
+
+    <script src="main.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm bg-dark sticky-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" id="main-nav">
           <li class="nav-item">
             <a class="nav-link" href="#aboutme">About Me</a>
           </li>
@@ -69,8 +71,8 @@
 
               Feel free to take a peek at some of my projects above and reach out to me using the links below!
       </div>
-      <div class="row">
-            <div class= "col-sm-4">
+      <div class="row social-iconrow">
+            <div class= "col-sm-4 icon-col">
             <div  id="contact-icon">
                   <a href="https://www.linkedin.com/in/zacharybmurphy/">
                     <i class="fa fa-linkedin fa-4x"></i>
@@ -78,7 +80,7 @@
                   </a>
                   </div>
                 </div>
-            <div class= "col-sm-4">
+            <div class= "col-sm-4 icon-col">
             <div id="contact-icon">
                   <a href="https://www.github.com/zmurphy93/">
                     <i class="fa fa-github fa-4x"></i>
@@ -86,7 +88,7 @@
                   </a>
                   </div>
                 </div>
-            <div class = "col-sm-4">
+            <div class = "col-sm-4 icon-col">
             <div id="contact-icon">
                   <a href="mailto:zmurphy93@gmail.com">
                     <i class="fa fa-envelope fa-4x"></i>
@@ -106,8 +108,8 @@
             <div class="card algcard">
                 <div class="card-content">
                   <div class="row text-center">
-                    <div class="col s4 m2 algorithm-type">
-                      <a href="classifiers_regressors/">
+                    <div class="col s3 m2 algorithm-type">
+                      <a href="/classifiers_regressors/">
                       <img alt="" src="images/classifier_image.png" class="responsive-img algorithm">Supervised Learning</div>
                     </a>
                     <div class="col s3 m2 algorithm-type"><img alt="" src="images/clustering_image.png" class="responsive-img algorithm">Unsupervised Learning</div>
@@ -117,7 +119,7 @@
               </div>
         </div>
       <h1 class="site-heading" id="skills">Skills</h1>
-      <div class="container-fluid skills" >
+      <div class="container  skill-section" >
         <div class="card skill-card">
             <div class="card-content">
               <h2 class="tech-type">Programming and Web Development</h2>
