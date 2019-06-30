@@ -6,8 +6,9 @@ body{
 }
 
 a {
-color: inherit;
+color: #a6a4a4 !important;
 text-decoration: none;
+font-weight: 700;
 }
 
 a:hover {
@@ -16,58 +17,30 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: #6710a5;
 }
-/*******************/
-/**Navigation Bar**/
-/*****************/
-ul {
-  list-style-type: none;
-  margin-bottom: 0;
-  overflow: hidden;
-  background-color: #39184f !important;
-}
 
-li {
-  float: left;
-  margin-bottom: 0;
-}
-
-li a {
-  display: block;
-  font-size: 24px;
-  color: white !important;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 0;
-}
-
-li a:hover:not(.active) {
-  background-color: #7e44af !important;
-}
-
-.active {
-  background-color: #7e44af !important;
-}
-
-.navbar{
-  background-color: #39184f !important;
-  margin-bottom: 0px;
-}
-
-.navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-      }
 /************************/
 /**"Jumbotron" Content**/
 /**********************/
 .top-box {
-  margin: 0;
-  background-color: black;
+  margin: auto;
+  background-image: url(images/cyclone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
+.head-text{
+  color:white;
+}
 .top-box-name {
-  color: #6710a5 !important;
+  color: #a6a4a4 !important;
   text-align: center;
-  font-size: 50px;
+  font-size: 72px;
+  font-weight: 1000;
+  padding-top:300px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .top-box-text{
   color: #d9d9db !important;
@@ -75,69 +48,12 @@ li a:hover:not(.active) {
   font-size: 28px;
 }
 
-.myphoto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #424244 !important;
-}
-/****************************/
-/**Bottom Section and Text**/
-/***************************/
-.col-sm-8 {
-  margin-bottom: 30px;
-}
-.site-heading{
-font-weight: 700;
-text-align: center;
-background-color: #6710a5;
-color: white;
-margin:0;
-padding-bottom: 20px;
-padding-top:20px;
-}
-.bio {
-padding-bottom: 4%;
-margin-top: 30px;
-font-size: 24px;
-}
-/*******************/
-/**Contact Icons***/
-/******************/
 #contact-icon{
   padding-left:150px;
   padding-top:10px;
   padding-bottom:30px;
 }
 
-.skills{
-  padding-top:30px;
-  padding-bottom: 30px;
-}
-.tech-type{
-  font-weight: 900px;
-}
-
-.tech-skills{
-  padding-top:10px;
-  padding-bottom:10px;
-  font-size: 24px;
-}
-.skill-card{
-  border:0px;
-  padding-top:20px;
-  padding-bottom:20px;
-}
-
-.algcard{
-  border:0px;
-  padding-top:20px;
-  padding-bottom:20px;
-  margin-bottom:2%;
-}
 .contact-heading{
   text-align: center;
   font-weight: 700;
@@ -176,6 +92,189 @@ font-size: 24px;
   background: #282c34;
   color: white;
 }
+/*******************/
+/**Navigation Bar**/
+/*****************/
+.navbar{
+  background-color: black !important;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.nav-item{
+  float: left;
+  margin-bottom: 0;
+  display: inline-block;
+  font-size: 24px;
+}
+
+a:.nav-item {
+  display: block;
+  font-size: 24px;
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+li a:hover:not(.active) {
+  background-color: gray !important;
+}
+
+.active {
+  background-color: gray !important;
+}
+
+.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+/**About Me**/
+.mast {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.aboutme{
+background: #493829;
+}
+
+.meteorology{
+background: #613318;
+}
+.datasci{
+  background:#D57500;
+}
+
+.ml{
+  background: #FFDE58;
+}
+
+.text-xxl{
+  font-size: 20px;
+}
+.mast.mast-dark, .mast.mast-dark-trans {
+
+    color: #FFF;
+}
+
+
+.h2 {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 54px;
+    color: white;
+    text-align: center;
+}
+
+.text-30{
+  font-size: 30px;
+}
+
+.col-state {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.col-state p {
+  margin-top: 20%;
+}
+
+
+
+.mast {
+    overflow: hidden;
+}
+
+/****************************/
+/**Data Sci Portfolio**/
+/***************************/
+
+.datasci-card {
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    height: 300px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    background-color: #654321;
+    margin-left: 10px;
+    margin-right :10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .flipper {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    perspective: 1000px;
+  }
+  /* flip the pane when hovered */
+  .flipper.flip .card {
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    width: 100%;
+    padding: 5px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    height: 100%;
+  }
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+    height: 100%;
+  }
+  .goback {
+    position: absolute;
+    bottom: 0px;
+    padding-left: 20px;
+    left: 0px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+.col-sm-8 {
+  margin-bottom: 30px;
+}
+.site-heading{
+font-weight: 700;
+text-align: center;
+background-color: #6710a5;
+color: white;
+margin:0;
+padding-bottom: 20px;
+padding-top:20px;
+}
+.bio {
+padding-bottom: 4%;
+margin-top: 30px;
+font-size: 24px;
+}
+/*******************/
+/**Contact Icons***/
+/******************/
+
 /********************/
 /**Data Sci and Meteorology Pages Content**/
 /********************/
@@ -205,52 +304,25 @@ font-size: 24px;
     font-size: 24px;
 }
 
-.algorithm-type{
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.algorithm{
-max-height:250px;
-max-width:100%;
-border: 2px solid black;
-}
 /********************/
 /**ML Menu Content***/
 /********************/
-.img-responsive{
-  border: 1px solid black;
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(60%);
 }
+.person:hover {
+  border-color: #f1f1f1;
+}
+.alg-type{
+  margin-left:40px;
+  margin-right:40px;
 
-#algorithm-menu{
-  padding-bottom: 5%;
 }
-
-.algorithm-item{
-  font-weight: 700;
-  text-align: center;
-}
-
-.list-group{
-  padding-left:0px;
-  margin-left:0px;
-}
-
-.menu{
-  text-align: center;
-  font-weight: 700;
-  font-size: 18px;
-}
-.algorithm_select {
-  margin-left: 0%;
-  padding-left:0%;
-}
-.media {
+.alg-name{
   font-size: 24px;
-  text-align: center;
-}
-
-.skill-section{
-margin-left: 15%;
-margin-right: 15%;
 }

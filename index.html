@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Murphy</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,138 +23,151 @@
     <script src="main.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm bg-dark sticky-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav" id="main-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutme">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ml">Machine Learning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/resume.html">Resume</a>
-        </li>
-      </ul>
-    </div>
-    </nav>
-  <!-- Jumbotron that contains my name, photo, and position -->
-  <div class="jumbotron top-box jumbotron-fluid">
-    <div class="container-fluid">
-    <img src="images/zmurphy.jpg" class="img-circle myphoto">
+
+<!-- TOP PHOTO SECTION AND OPENER -->
+  <div class="container-fluid top-box">
     <h1 class="top-box-name"><strong>Zach Murphy</strong></h1>
-    <p class = "top-box-text">Meteorologist<br>
-    Budding Machine Learning and Data Science Enthusiast</p>
-  </div>
+    <p class="text-30 text-center head-text">Meteorologist, budding software developer and data scientist.</p>
+
 </div>
+<!--NAVIGATION BAR--->
+<nav class="navbar navbar-expand-sm bg-dark sticky-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav" id="main-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutme">About Me |</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#meteorology">Meteorology |</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#datasci">Data Science |</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ml">Machine Learning |</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/resume.html">Resume</a>
+    </li>
+  </ul>
+</div>
+</nav>
 
-  <!-- Two columns: First one contains a bio, Second one contains links to social media stuff. -->
-        <!-- Example row of columns -->
-  <h1 class="site-heading" id="aboutme">About Me</h1>
-  <div class="container-fluid text-center bio" >
-              Welcome! I am an operational meteorologist, forecasting the weather in the Northeast United States.
-              I received my M.S. in Atmospheric Sciences from the University at Albany, SUNY and a B.S. in Atmospheric
-              Sciences and a Certificate in Mathematics from the University of Wisconsin - Madison. Intensive scientific research and
-              experience in data analysis were integral components to these degrees. When I am not busy agonizing over the weather
-              forecast, I am actively applying programming and data analysis techniques to projects of my own personal interest.
-              <br><br>
-              In the process of obtaining my degrees, the complex datasets that are used to perform
-              scientific research in this field have necessitated my development of programming and data processing skills. As a result,
-              I have created a few projects that have allowed me to further my skills in machine learning, data analysis, and statistical analysis. Many of those
-              projects shown here use meteorology as an inspiration.<br><br>
+  <!-- BIOGRAPHY SECTION -->
+        <section id="aboutme" class="mast mast-dark mast-collab aboutme" data-spy="scroll" data-target="#header">
+    			<div class="container-fluid">
+    				<h3 class="h2">ABOUT ZACH</h3>
+    				<p class="text-30">Meteorologist by day (even sometimes at night!), budding software developer and data geek by night.</p>
+    				<hr class="separator" />
+    				<div class="row text-left push-top-lg push-bottom-lg">
+    					<div class="col-sm-4 col-state education">
+    						<p class="text-xxl">I was born in Illinois and raised in Wisconsin where cheese and bratwursts reign supreme. I left my small town to become a badger at the University of Wisconsin - Madison and obtained a degree in Atmospheric Sciences, as well as a certificate in Mathematics. In 2015, I left the Midwest and moved to Albany, New York to pursue my M.S. in Atmospheric Sciences.</p>
+    					</div>
+    					<div class="col-sm-4 col-state light">
+    						<p class="text-xxl"> During my time in graduate school, I recognized the importance of computer technology and began working on my data analysis, statistics, and software development skills to improve my data analysis skills. Python became my best friend during this time and it remains a favorite tool of mine in a variety of applications.</p>
+    					</div>
+    					<div class="col-sm-4 col-state current">
+    						<p class="text-xxl">In 2017, I moved to the Lehigh Valley in Pennsylvania, where I work as a consultant meteorologist just across the border in New Jersey. I work on a variety of software and web development projects when I am not forecasting. I am passionate about developing web applications that display scientific data and am fascinated by unifying meteorological problems and machine learning.
+    					</div>
+    				</div>
+          </div>
+        </section>
 
-              Feel free to take a peek at some of my projects above and reach out to me using the links below!
-      </div>
-      <div class="row social-iconrow">
-            <div class= "col-sm-4 icon-col">
-            <div  id="contact-icon">
-                  <a href="https://www.linkedin.com/in/zacharybmurphy/">
-                    <i class="fa fa-linkedin fa-4x"></i>
-                    <span class="media">LinkedIn</span>
-                  </a>
-                  </div>
-                </div>
-            <div class= "col-sm-4 icon-col">
-            <div id="contact-icon">
-                  <a href="https://www.github.com/zmurphy93/">
-                    <i class="fa fa-github fa-4x"></i>
-                    <span class="media">Github</span>
-                  </a>
-                  </div>
-                </div>
-            <div class = "col-sm-4 icon-col">
-            <div id="contact-icon">
-                  <a href="mailto:zmurphy93@gmail.com">
-                    <i class="fa fa-envelope fa-4x"></i>
-                    <span class="media">Email</span>
-                  </a>
-              </div>
-            </div>
-        </div>
-        <h1 class="site-heading"  id="ml">Machine Learning Algorithms</h1>
+<!--METEOROLOGY SECTION--->
+        <section id="meteorology" class="mast mast-dark mast-collab meteorology">
           <div class="container-fluid">
+            <h3 class="h2">PORTFOLIO: WEB APPS</h3>
                 <div class="row">
-                      <p class = "banner-heading"> <strong>Machine Learning |</strong> Algorithms created without special modules.</p>
                 </div>
           </div>
-          <!--- Select from the four algorithm types below --->
-          <div class="container-fluid">
-            <div class="card algcard">
-                <div class="card-content">
-                  <div class="row text-center">
-                    <div class="col s3 m2 algorithm-type">
-                      <a href="/classifiers_regressors/">
-                      <img alt="" src="images/classifier_image.png" class="responsive-img algorithm">Supervised Learning</div>
-                    </a>
-                    <div class="col s3 m2 algorithm-type"><img alt="" src="images/clustering_image.png" class="responsive-img algorithm">Unsupervised Learning</div>
-                    <div class="col s3 m2 algorithm-type"><img alt="" src="images/neural_net_image.png" class="responsive-img algorithm">Deep Learning</div>
-                  </div>
-                </div>
-              </div>
-        </div>
-      <h1 class="site-heading" id="skills">Skills</h1>
-      <div class="container  skill-section" >
-        <div class="card skill-card">
-            <div class="card-content">
-              <h2 class="tech-type">Programming and Web Development</h2>
-              <div class="row text-center tech-skills">
-                <div class="col s4 m2"><img alt="" src="images/html5.png" class="responsive-img">HTML5</div>
-                <div class="col s4 m2"><img alt="" src="images/bootstrap.png" class="responsive-img">Bootstrap</div>
-                <div class="col s4 m2"><img alt="" src="images/javascript.png" class="responsive-img">Javascript</div>
-                <div class="col s4 m2"><img alt="" src="images/php.png" class="responsive-img">PHP</div>
-                <div class="col s4 m2"><img alt="" src="images/python.png" class="responsive-img">Python</div>
-              </div>
-            </div>
-          </div>
-          <div class="card skill-card">
-              <div class="card-content">
-                <h2 class="tech-type">Development Frameworks</h2>
-                <div class="row text-center tech-skills">
-                  <div class="col s4 m2"><img alt="" src="images/cake-php.png" class="responsive-img">Cake (PHP)</div>
-                  <div class="col s4 m2"><img alt="" src="images/flask.png" class="responsive-img">Flask (Python)</div>
-                  <div class="col s4 m2"><img alt="" src="images/dash.png" class="responsive-img">Plotly-Dash (Python)</div>
-                </div>
-              </div>
-            </div>
-          <div class="card skill-card">
-              <div class="card-content">
-                <h2 class="tech-type">Data Visualization, Analysis, and Machine Learning</h2>
-                <div class="row text-center tech-skills">
-                  <div class="col s4 m2"><img alt="" src="images/pandas.png" class="responsive-img">Pandas</div>
-                  <div class="col s4 m2"><img alt="" src="images/sklearn.png" class="responsive-img">Scikit-Learn</div>
-                  <div class="col s4 m2"><img alt="" src="images/tf.png" class="responsive-img">TensorFlow</div>
-                  <div class="col s4 m2"><img alt="" src="images/keras.png" class="responsive-img">Keras</div>
-                </div>
-              </div>
-            </div>
-    </div>
+        </section>
 
+<!--DATA SCI SECTION--->
+          <section id="datasci" class="mast mast-dark mast-collab datasci">
+            <div class="container-fluid">
+              <h3 class="h2">PORTFOLIO: DATA SCIENCE PROJECTS</h3>
+                  <!-- <div class="row">
+                    <div class="flipper col-sm-4">
+                      <div class="card datasci-card">
+                        <div class="front">
+                          <p>
+                            <img src="http://dummyimage.com/150x110/999/fff">
+                          </p>
+                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
+                          <button class="btn btn-default bottom" type="submit">Learn More</button>
+                        </div>
+                        <div class="back">
+                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
+                          <div class="goback">
+                            <p>back</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flipper col-sm-4">
+                      <div class="card datasci-card">
+                        <div class="front">
+                          <p>
+                            <img src="http://dummyimage.com/150x110/999/fff">
+                          </p>
+                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
+                          <button class="btn btn-default bottom" type="submit">Learn More</button>
+                        </div>
+                        <div class="back">
+                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
+                          <div class="goback">
+                            <p>back</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flipper col-sm-4">
+                      <div class="card datasci-card">
+                        <div class="front">
+                          <p>
+                            <img src="http://dummyimage.com/150x110/999/fff">
+                          </p>
+                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
+                          <button class="btn btn-default bottom" type="submit">Learn More</button>
+                        </div>
+                        <div class="back">
+                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
+                          <div class="goback">
+                            <p>back</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </section>
+<!--MACHINE LEARNING SECTION--->
+          <section id="ml" class="mast mast-dark mast-collab ml">
+          <div class="container-fluid">
+          <h3 class="h2">MACHINE LEARNING ALGORITHMS FROM THE GROUND UP</h3>
+          <div class="row">
+              <div class="col-xs-4 alg-type">
+                  <p class="text-center alg-name"><strong>Supervised Learning</strong></p><br>
+                  <a href="https://zmurphy93.github.io/classifiers_regressors/">
+                    <img src="images/classifier_image.png" class="rounded-circle person" width="255" height="255">
+                  </a>
+                  </div>
+              <div class="col-xs-4 alg-type">
+                <p class="text-center alg-name"><strong>Unsupervised Learning</strong></p><br>
+                  <img src="images/clustering_image.png" class="rounded-circle person"  width="255" height="255">
+                </div>
+                <div class="col-xs-4 alg-type">
+                    <p class="text-center alg-name"><strong>Deep Learning</strong></p><br>
+                      <img src="images/neural_net_image.png" class="rounded-circle person" width="255" height="255">
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </body>
+    </html>
   </body>
 </html>
