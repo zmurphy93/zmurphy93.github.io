@@ -21,7 +21,7 @@
 
   <script src="ml.js"></script>
 
-  <link rel="stylesheet" href="ml.css">
+  <link rel="stylesheet" href="classifiers_regressors.css">
 
 </head>
 
@@ -30,9 +30,9 @@
   <div class="jumbotron top-box jumbotron-fluid">
     <div class="container-fluid">
       <div class="row">
-        <img src="classifier_image.png" class="img-circle photo_active">
-        <img src="clustering_image.png" class="img-circle photo">
-        <img src="neural_net_image.png" class="img-circle photo">
+        <img src="images/classifier_image.png" class="img-circle photo_active">
+        <img src="images/clustering_image.png" class="img-circle photo">
+        <img src="images/neural_net_image.png" class="img-circle photo">
       </div>
     </div>
     <h1 class="top-box-name"><strong>Supervised Learning</strong></h1>
@@ -175,7 +175,7 @@
     }
 
     function load_content(file, click) {
-      document.getElementById("algorithm_disc").innerHTML = readFile('alg_pages/' + file + '.html');
+      document.getElementById("algorithm_disc").innerHTML = readFile('supervised_pages/' + file + '.html');
 
       if (click == 1) {
         $([document.documentElement, document.body]).animate({
