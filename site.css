@@ -34,14 +34,13 @@ a:hover {
   color:white;
 }
 .top-box-name {
-  color: #a6a4a4 !important;
+  color: black !important;
   text-align: center;
   font-size: 72px;
   font-weight: 1000;
   padding-top:300px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
+
 .top-box-text{
   color: #d9d9db !important;
   text-align: center;
