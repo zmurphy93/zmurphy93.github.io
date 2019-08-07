@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zach Murphy</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="ml.css">
+</head>
+
+<body>
+  <div class="alg-content" id="LDA">
+    <span class="alg-heading">Linear Discriminant Analysis</span>
+    <hr><br>
+
+    <div class="sub-heading">Introduction</div>
+
+    <span class="alg-specs">
+    </span><br><br>
+
+    <span class="alg-specs"></span>
+
+    <div class="sub-heading">Building the Algorithm</div>
+    <span class="alg-specs">
+      To begin, let's create a class: <code>class LinearDiscriminantAnalysis</code>.</span><br><br>
+
+    <span class="alg-specs">
+      We will be referring to discriminant function below as we build our classifier.<br><br>
+    </span>
+    <img src="http://www.sciweavers.org/tex2img.php?eq=%5Cdelta_%7Bk%7D%28x%29%20%3D%20x%5E%7BT%7D%5CSigma%5E%7B-1%7D%5Cmu_k%20-%20%5Cfrac%2012%5Cmu_k%5ET%5CSigma%5E%7B-1%7D%20%2B%20log%28%5Cpi_k%29&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0"
+      align="center" border="0" alt="\delta_{k}(x) = x^{T}\Sigma^{-1}\mu_k - \frac 12\mu_k^T\Sigma^{-1} + log(\pi_k)" width="272" height="36" />
+    <br><br>
+    <span class="alg-specs">
+      LDA simply relies on computation of the variables
+      and coefficients that are present in the discriminant function from the training data. We will work from left to right in the above equation, computing each term's
+      coefficients.</span>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zach Murphy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="ml.css">
+
+  </head>
+<body>
+<div class="alg-content" id="QDA">
+  <span class="alg-heading">Quadratic Discriminant Analysis</span><hr><br>
+
+<div class="sub-heading">Introduction</div>
+
+<span class="alg-specs">
+K-Nearest Neighbors is one of the simplest supervised machine learning algorithms. A diagram depicting how the algorithm works
+is shown below. During the training phase, the algorithm takes both the features and labels of the training data
+and simply stores it for the prediction phase. the algorithm makes predictions by taking sets of features from the
+prediction set and computing a distance metric to the data points in the training set. It then selects the k-neighbors
+that have the smallest datapoints and selects what label describes the majority of the neighbors and assigns it to the
+prediction point. In a sense, it is an implementation of the duck test, where if a data point has similar features to
+data points in the training set, then it probably should be classified with the same label as those training points. </span><br><br>
+
+<span class="alg-specs">Since little is done with the data until the prediction phase, the K-Nearest Neighbors algorithm has
+been considered a "lazy Learning algorithm". Other machine learning algorithms actively process training data during the
+training phase, building a model that can quickly perform tasks when predictions are requested.</span>
+
+<div class="sub-heading">Building the Algorithm</div>
+<span class="alg-specs">
+We will build the algorithm from scratch using Python. This will be done using an object-oriented approach, which will
+involve the creation of a class with relevant parameters and data that will allow us to create an algorithm that can be
+reused. To begin, let's create a class: <code>class KNearestNeighborsClassification</code>.</span><br><br>
+
+<span class="alg-specs">
+Next, we will define the constructor method. This method will allow us to build an instance of <code>KNearestNeighborsClassification</code>.
+This method also contains several unique parameters and functions that will influence how the algorithm trains and predicts data. These
+are referred to as <strong>hyperparameters</strong>. In the case of the K-Nearest Neighbors algorithm, we have 3 hyperparameters that we can control.</span><br><br>
+
+<span class="alg-specs">
+<strong>k</strong>: (integer) The number of neighboring data points that test data will be compared to during the prediction process.</span><br><br>
+
+<span class="alg-specs">
+<strong>distance_metric</strong>: (string) The distance metric that we will use to calculate the distances between data points. There are several
+different types of equations for computing distances between data points. Here, we will consider the "euclidean", "manhattan", and "minkowski" distances.
+More information regarding these will be given below.</span><br><br>
+
+<span class="alg-specs">
+<strong>p</strong>: (int) Theee value of the exponent in the Minkowski distance formulation. By default, it will be set to 1, but can be changed by the user.<span>
+
+
+
+
+</body>
+</html>

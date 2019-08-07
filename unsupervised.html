@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zach Murphy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="ml.js"></script>
+
+    <link rel="stylesheet" href="ml.css">
+
+  </head>
+  <body>
+
+  <div class="jumbotron top-box jumbotron-fluid">
+    <div class="container-fluid">
+      <div class="row">
+      <img src="classifier_image.png" class="img-circle photo">
+      <img src="clustering_image.png" class="img-circle photo_active">
+      <img src="neural_net_image.png" class="img-circle photo">
+    </div>
+  </div>
+    <h1 class="top-box-name"><strong>Unsupervised Learning</strong></h1>
+    <p class = "top-box-text"><strong>Algorithms that uncover hidden relations without training.</p>
+    </p>
+    <p class="top-box-text">Select an item from the menu on the left to learn more about it.</p>
+  </div>
+  <!-- Navigation Bar -->
+  <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <h3>Dimensionality Reduction and Clustering</h3>
+            </div>
+            <ul class="list-unstyled components">
+              <li  onclick="load_content('Introduction', 1)" class="menu_item" data-item="#KNN">
+                  Principal Component Analysis
+              </li>
+              <br>
+                <li  onclick="load_content('Initializations', 1)" class="menu_item" data-item="#KNN">
+                    Factor Analysis
+                </li>
+                <br>
+                <li  onclick="load_content('Activations', 1)" class="menu_item" data-item="#LogisticRegression">
+                    Locally Linear Embedding
+                </li>
+                <br>
+                <li  onclick="load_content('Forwardprop', 1)" class="menu_item" data-item="#LDA">
+                    t-SNE
+                </li>
+                <br>
+                <li onclick="load_content('Backprop', 1)" class="menu_item" data-item="#QDA">
+                    K-Means Clustering
+                </li>
+                <br>
+                <li onclick="load_content('Optimization', 1)" class="menu_item" data-item="#NaiveBayes">
+                    DBSCAN Clustering
+                </li>
+                <br>
+                <li onclick="load_content('Regularization', 1)" class="menu_item" data-item="#SVM">
+                    Hierarchical Clustering
+                </li>
+                <br>
+
+            </ul>
+
+            <div class="sidebar-header">
+                <h3>Misc. Data Mining</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li  class="menu_item" data-item="#LinearRegression">
+                    Apriori Algorithm
+                </li>
+                <br>
+                <li  class="menu_item" data-item="#Lasso">
+                    FP-Growth
+                </li>
+                <br>
+                <li  class="menu_item" data-item="#Lasso">
+                    Expectation - Maximization
+                </li>
+                <br>
+                <li  class="menu_item" data-item="#Lasso">
+                    PageRank
+                </li>
+                <br>
+                </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg class="svg-inline--fa fa-align-justify fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="align-justify" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 84V44c0-8.837 7.163-16 16-16h416c8.837 0 16 7.163 16 16v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16zm16 144h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 256h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0-128h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-align-justify"></i> -->
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://zmurphy93.github.io">Zach Murphy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://zmurphy93.github.io/#aboutme">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://zmurphy93.github.io/#meteorology">Meteorology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://zmurphy93.github.io/#datasci">Data Science</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://zmurphy93.github.io#ml">Machine Learning</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://zmurphy93.github.io/resume.html">Resume</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id = "algorithm_disc">
+
+          </div>
+        </div>
+    </div>
+  <script>
+  function readFile(file){
+	content = "";
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+				content = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+	   return content;
+}
+
+function load_content(file, click){
+	document.getElementById("algorithm_disc").innerHTML = readFile('alg_pages/'+file+'.html');
+
+	if(click==1){
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#algorithm_disc").offset().top-100
+    }, 500);
+	}
+}
+
+load_content('KNN', 0);
+
+  </script>
+</body>
+</html>

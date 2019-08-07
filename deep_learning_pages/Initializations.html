@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zach Murphy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="ml.css">
+
+  </head>
+<body>
+<div class="alg-content">
+  <span class="alg-heading">Neural Network Layers and Weight Initialization</span><hr><br>
+
+<div class="sub-heading">Introduction</div>
+
+<span class="alg-specs">
+Perhaps the most recognizable features of many neural networks are the hidden layers.
+Hidden layers contain a predefined number of computational units called neurons.
+These layers can be stacked in a sequence, which will allow data to pass through each layer
+and be processed by their neurons before a prediction is made. Some neural networks can have an
+incredibly large number of layers with thousands of neurons per layer, allowing them to perform
+extraordinarily complex tasks. It is for the simple notion that neural networks can possess multiple
+layers that applications involving neural networks are referred to as deep learning applications.
+</span><br><br>
+
+<span class="alg-specs">
+Within these layers, two distinct mathematical operations that reside within each neuron
+are applied to incoming data. The first operation involves a product between the
+incoming data and a predefined number called a <strong>weight</strong>. It should be noted
+that if there are multiple inputs (as is often the case in neural networks with multiple neurons per layer)
+then the incoming data will be subjected to multiplication from different numbers of weights
+and summed together within the neuron. Mathematically, these procedures look like this:
+</span><br><br>
+<br><br>
+<span class="alg-specs">
+And for the multi-input case:
+</span><br><br>
+
+<br><br>
+<span class="alg-specs">
+The second operation, which will be discussed in another module, passes the product
+of training data and weights into a mathematical function called an activation function.
+</span><br>
+
+<span class="alg-specs">
+The weights that are within each hidden layer's neurons are critical to deep learning.
+After all,it is their numerical values that are optimized during the training process,
+so that the network can perform machine learning tasks accurately.
+It turns out that the initial values of these neurons play an important role
+in the training process of the network. Choosing the right neurons can
+improve the speed with which the network trains,as well as ensure that the chosen
+optimization algorithm that operates during training converges to the best
+possible minimum in evaluating the cost function.</span><br><br>
+
+<span class="alg-specs">
+We will go through the process of creating the structure of a neural network, by writing
+functions that will specify the number of hidden layers and number of neurons per layer.
+Next, we will go write some functions that can specify how a neural network's weights
+should be initialized.
+</span><br><br>
+
+
+<div class="sub-heading">Defining the Layers and Neurons of A Neural Network</div>
+<span class="alg-specs">
+</span>
+
+<div class="sub-heading">Initializations</div>
+<span class="alg-specs">
+</span>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zach Murphy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="ml.css">
+
+</head>
+
+<body>
+  <div class="alg-content" id="DecisionTrees">
+    <span class="alg-heading">Decision Trees</span>
+    <hr><br>
+
+    <div class="sub-heading">Introduction</div>
+
+    <span class="alg-specs">
+      Decision trees are a popular algorithm and one that is relatively easy to understand,
+      even by non-machine learning specialists. As a result, it is quite popular, both as a standalone algorithm,
+      and especially as a member in various ensemble machine learning algorithms.</span><br><br>
+
+    <span class="alg-specs">
+      The training process for a decision tree involves recursively building a hierarchy of structures called <strong>nodes</strong>. Each node has two branches, representing two possible
+      paths for data to flow through. During the training process, one of two metrics (the <strong>Gini Impurity</strong> or the <strong>Information Gain</strong>) are computed, and measure the overall
+      impurity of data after a hypothetical split is made based on thresholds for a selected feature from the training data.
+      The feature/threshold combination that yields the highest impurity will result in a split that will attempt to lower the purity for this feature, sending data
+      to additional branches so that the process continues until all data is sorted and classified appropriately.</span><br><br>
+    <span class="alg-specs">
+      Once the tree is grown, data for new observations can be allowed to flow through it. As it moves through the tree, the data encounters a series of quantitative conditions
+      developed from the training process. Based on whether or not the observations fulfill the conditions,
+      a classification for the observation can be arrived at once the observation reaches terminal nodes (also called <strong>leaf nodes</strong>)<br><br>
+      at the bottom of the tree.
+    </span><br><br>
+
+    <div class="sub-heading">Building the Algorithm</div>
+    <span class="alg-specs">
+      Our first order of business is to create <code>class Node</code>. This class will represent an individual decision within our
+      decision tree. It will be called repeatedly during the training process in order to create more branches within the tree.
+      The class' constructor method will be fairly straightforward, and contains the following variables and methods.
+
+      Next, we will create <code>class DecisionTreeClassifier</code>. After creating this, we shift our attention to the constructor method.
+      This method lists a fairly large number of hyperparameters that can be tinkered with to influence the decision tree's training
+      capabilities.</span><br><br>
+
+    <span class="alg-specs">
+      <strong>impurity_function</strong>: (string) The function that will calculate the impurity of data for each node. There are two Functions
+      that can be used: "gini", and "information gain".</span><br><br>
+
+    <span class="alg-specs">
+      <strong>max_depth</strong>: (int) The maximum depth that the tree will be allowed to grow, in number of nodes.</span><br><br>
+
+    <span class="alg-specs">
+      <strong>min_impurity</strong>: (int) The minimum impurity value that can be used to justify a split at a node.</span><br><br>
+
+    <span class="alg-specs">
+      <strong>min_samples</strong>: (int) The minimum number of samples required to initiate the splitting process at a node.</span><br><br>
+
+    <span class="alg-specs">
+      <strong>max_leaf_nodes</strong>: (int) The maximum number of terminal leaf nodes. This will be decided by selecting those that are most pure.</span><br><br>
+
+    <span class="alg-specs">With these parameters in mind, we can begin by creating private functions that will perform calculations based on the Gini Impurity
+      Index and Information Gain. </span>
+
+</body>
+
+</html>
