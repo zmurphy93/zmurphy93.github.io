@@ -27,8 +27,7 @@
 <!-- TOP PHOTO SECTION AND OPENER -->
   <div class="container-fluid top-box">
     <h1 class="top-box-name"><strong>Zach Murphy</strong></h1>
-    <p class="text-30 text-center head-text">Meteorologist, budding software developer and data scientist.</p>
-
+    <p class="text-30 text-center head-text">Meteorologist, budding software developer and aspring data scientist.</p>
 </div>
 <!--NAVIGATION BAR--->
 <nav class="navbar navbar-expand-sm bg-dark sticky-top">
@@ -41,13 +40,7 @@
         <a class="nav-link" href="#aboutme">About Me |</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#meteorology">Meteorology |</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#datasci">Data Science |</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#ml">Machine Learning |</a>
       </li>
     <li class="nav-item">
         <a class="nav-link" href="/resume.html">Resume</a>
@@ -76,76 +69,63 @@
           </div>
         </section>
 
-<!--METEOROLOGY SECTION--->
-        <section id="meteorology" class="mast mast-dark mast-collab meteorology">
-          <div class="container-fluid">
-            <h3 class="h2">PORTFOLIO: WEB APPS</h3>
-                <div class="row">
-                </div>
-          </div>
-        </section>
-
 <!--DATA SCI SECTION--->
           <section id="datasci" class="mast mast-dark mast-collab datasci">
             <div class="container-fluid">
-              <h3 class="h2">PORTFOLIO: DATA SCIENCE PROJECTS</h3>
-                  <!-- <div class="row">
-                    <div class="flipper col-sm-4">
+              <h3 class="h2">DATA SCIENCE PROJECTS</h3>
+                  <div class="row">
+                    <div class="flipper col-sm-6">
                       <div class="card datasci-card">
                         <div class="front">
                           <p>
-                            <img src="http://dummyimage.com/150x110/999/fff">
+                            <img class="ds_images" src="chicago-heatwave.jpg">
                           </p>
-                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
+                          <p>Identifying Past Heat Waves in Chicago With Machine Learning</p>
                           <button class="btn btn-default bottom" type="submit">Learn More</button>
                         </div>
                         <div class="back">
-                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
+                          <ul>
+                            <li class="ds_item_fact">Several decades of daily temperature records, gridded reanalysis data, and teleconnection indices were gathered for Chicago, Illinois</li>
+                            <li class="ds_item_fact">These data sources were compiled into a training matrix and days with extremely high temperatures were identified by those where maximum temperatures were above the 95th percentile.</li>
+                            <li class="ds_item_fact">Given the rarity of these extreme days, SMOTE was used to synthetically increase the number of extreme heat days to balance out those that were non-heat days.</li>
+                            <li class="ds_item_fact">A "pipeline" was created that validated, trained, and tested several Scikit-Learn classifiers.</li>
+                            <li class="ds_item_fact">Random Forests, Logistic Regression tended to perform the most accurately.</li>
+                            <li class="ds_item_fact"><a href="https://github.com/zmurphy93/Identifying-Heat-Waves-with-ML/blob/master/Using%20Machine%20Learning%20to%20Find%20Historic%20Heat%20Waves%20in%20Chicago.ipynb" target="_blank">Link to Jupyter Notebook.</a></li>
+                          </ul>
                           <div class="goback">
                             <p>back</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="flipper col-sm-4">
+                    <div class="flipper col-sm-6">
                       <div class="card datasci-card">
                         <div class="front">
                           <p>
-                            <img src="http://dummyimage.com/150x110/999/fff">
+                            <img class="ds_images" src="ode.jpg">
                           </p>
-                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
+                          <p>Classifiying HandWritten Equations Using Convolutional Neural Networks.</p>
                           <button class="btn btn-default bottom" type="submit">Learn More</button>
                         </div>
                         <div class="back">
-                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
+                          <ul>
+                            <li class="ds_item_fact">Over 400 images of handwritten mathmatical equations were gathered. Equations consisted of matrices from linear algebra, and ordinary differential equations.</li>
+                            <li class="ds_item_fact">The dataset was artificially augmented using Keras' image tranformations to allow for more training data to be available for the neural network.</li>
+                            <li class="ds_item_fact">A small convolutional neural network (CNN) was designed and heavily regularized using Batch Normalization and Dropout layers.</li>
+                            <li class="ds_item_fact">After training for 5 epochs, the network achieved 85-90% accuracy on both training and validation data.</li>
+                            <li class="ds_item_fact"><a href="https://github.com/zmurphy93/ConvNet_Math_ID/blob/master/Classifying%20Mathematical%20Expressions%20with%20Convolutional%20Neural%20Networks.ipynb" target="_blank">Link to Jupyter Notebook.</a></li>
+                          </ul>
                           <div class="goback">
                             <p>back</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="flipper col-sm-4">
-                      <div class="card datasci-card">
-                        <div class="front">
-                          <p>
-                            <img src="http://dummyimage.com/150x110/999/fff">
-                          </p>
-                          <p>Lorem consectetu adidfsicdding elitdafdd. At quaessrat iste mollitia aspedriores.</p>
-                          <button class="btn btn-default bottom" type="submit">Learn More</button>
-                        </div>
-                        <div class="back">
-                          <p>here is some information on the back of card one. I would like to <a href="http://davidwalsh.name/css-flip">link some text</a> for people to follow on the back of the card - but the click action messes that up.</p>
-                          <div class="goback">
-                            <p>back</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
+                  </div>
                 </div>
               </section>
 <!--MACHINE LEARNING SECTION--->
-          <section id="ml" class="mast mast-dark mast-collab ml">
+          <!-- <section id="ml" class="mast mast-dark mast-collab ml">
           <div class="container-fluid">
           <h3 class="h2">MACHINE LEARNING ALGORITHMS FROM THE GROUND UP</h3>
           <div class="row">
@@ -161,16 +141,11 @@
                   <img src="images/clustering_image.png" class="rounded-circle person"  width="255" height="255">
                 </a>
                 </div>
-                <div class="col-xs-4 alg-type">
-                    <p class="text-center alg-name"><strong>Deep Learning</strong></p><br>
-                    <a href="https://zmurphy93.github.io/deeplearning.html">
-                      <img src="images/neural_net_image.png" class="rounded-circle person" width="255" height="255">
-                    </a>
                 </div>
               </div>
             </div>
         </div>
-      </section>
+      </section> -->
     </body>
     </html>
   </body>
