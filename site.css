@@ -3,6 +3,7 @@
 body{
   font-family: 'Zilla Slab', serif;
   width: 100%;
+  height:100%
 }
 
 a {
@@ -64,11 +65,12 @@ a:hover {
 }
 
 .fa {
-  padding: 10px;
+  padding: 20px;
   font-size: 80px;
   text-align: center;
   text-decoration: none;
   border-radius:50%;
+  position: relative;
 }
 
 .fa:hover {
@@ -137,13 +139,22 @@ li a:hover:not(.active) {
 background: #493829;
 }
 
-.meteorology{
-background: #613318;
-}
-.datasci{
-  background:#D57500;
+.experience{
+  background: #583836;
 }
 
+.projects{
+  background:#5d3c4d;
+}
+
+.coned{
+    background: #813433;
+}
+
+.contact{
+  /*background: #b65f4a;*/
+  background: #813433;
+}
 .ml{
   background: #FFDE58;
 }
@@ -152,7 +163,6 @@ background: #613318;
   font-size: 20px;
 }
 .mast.mast-dark, .mast.mast-dark-trans {
-
     color: #FFF;
 }
 
@@ -193,17 +203,22 @@ background: #613318;
 
 .datasci-card {
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
     width: 100%;
-    height: 300px;
+    height: 500px;
     transition: 0.6s;
     transform-style: preserve-3d;
     position: relative;
-    background-color: #654321;
+    background-color: #FFFFFF;
     margin-left: 10px;
     margin-right :10px;
     padding-left: 10px;
     padding-right: 10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:#000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;
   }
   .flipper {
     padding-left: 20px;
@@ -244,14 +259,6 @@ background: #613318;
     text-decoration: underline;
     cursor: pointer;
   }
-
-
-
-
-
-
-
-
 
 .col-sm-8 {
   margin-bottom: 30px;
@@ -308,28 +315,85 @@ font-size: 24px;
 }
 
 .ds_images{
-  width: 200px;
-   height: 160px;
+  flex-shrink:0;
+  -webkit-flex-shrink: 0;
+  max-width: 300px;
+  max-height: 100px;
 }
-/********************/
-/**ML Menu Content***/
-/********************/
-.person {
-  border: 10px solid transparent;
-  margin-bottom: 25px;
-  width: 80%;
-  height: 80%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(60%);
-}
-.person:hover {
-  border-color: #f1f1f1;
-}
-.alg-type{
-  margin-left:20px;
-  margin-right:20px;
+
+.box{
+  background: #FFFFFF;
+  height: 200px;
+  border-style:solid;
+  border-width:3px;
+  border-color:#000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;
 
 }
-.alg-name{
-  font-size: 24px;
+
+.circleBase {
+  height: 200px;
+  width: 200px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: #67294c;
+  color:white;
+  border-style:solid;
+  border-color: black;
+  border-width:3px;
+  font-size:18px;
+  font-weight: bold;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.activated, .circleBase:hover {
+  background-color: #a16687;
+}
+
+
+.t {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.tc {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rel {
+    position: relative;
+}
+
+.projectexample{
+  background: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width:3px;
+  height: 600px;
+}
+
+.skill{
+  background: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width:3px;
+  height: 600px;
+}
+.coneducation{
+  background: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width:3px;
+  height: 600px;
+  overflow-y: scroll;
 }

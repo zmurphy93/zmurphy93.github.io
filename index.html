@@ -1,174 +1,325 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zach Murphy</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zach Murphy</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- My own CSS -->
-    <link rel="stylesheet" href="site.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="main.js"></script>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <script src="turnjs4/lib/turn.min.js"></script>
+  <!-- My own CSS -->
+  <link rel="stylesheet" href="site.css">
 
-<!-- TOP PHOTO SECTION AND OPENER -->
+  <script src="main.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- TOP PHOTO SECTION AND OPENER -->
   <div class="container-fluid top-box">
     <h1 class="top-box-name"><strong>Zach Murphy</strong></h1>
     <p class="text-30 text-center head-text">Meteorologist, budding software developer and aspiring data scientist.</p>
-</div>
-<!--NAVIGATION BAR--->
-<nav class="navbar navbar-expand-sm bg-dark sticky-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  </div>
+  <!--NAVIGATION BAR--->
+  <nav class="navbar navbar-expand-sm bg-dark sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-  <ul class="navbar-nav" id="main-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutme">About Me |</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#datasci">Data Science |</a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/resume.html">Resume</a>
-    </li>
-  </ul>
-</div>
-</nav>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav" id="main-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutme">About Me |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects |</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#coned">Continued Education | </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact | </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resume.html">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- BIOGRAPHY SECTION -->
-        <section id="aboutme" class="mast mast-dark mast-collab aboutme" data-spy="scroll" data-target="#header">
-    			<div class="container-fluid">
-    				<h3 class="h2">ABOUT ZACH</h3>
-    				<p class="text-30">Meteorologist by day (even sometimes at night!), budding software developer and data geek by night.</p>
-    				<hr class="separator" />
-    				<div class="row text-left push-top-lg push-bottom-lg">
-    					<div class="col-sm-4 col-state education">
-    						<p class="text-xxl">I was born in Illinois and raised in Wisconsin where cheese and bratwursts reign supreme. I left my small town to become a badger at the University of Wisconsin - Madison and obtained a degree in Atmospheric Sciences, as well as a certificate in Mathematics. In 2015, I left the Midwest and moved to Albany, New York to pursue my M.S. in Atmospheric Sciences.</p>
-    					</div>
-    					<div class="col-sm-4 col-state light">
-    						<p class="text-xxl"> During my time in graduate school, I recognized the importance of computer technology and began working on my data analysis, statistics, and software development skills to improve my data analysis skills. Python became my best friend during this time and it remains a favorite tool of mine in a variety of applications.</p>
-    					</div>
-    					<div class="col-sm-4 col-state current">
-    						<p class="text-xxl">In 2017, I moved to the Lehigh Valley in Pennsylvania, where I work as a consultant meteorologist just across the border in New Jersey. I work on a variety of software and web development projects when I am not forecasting. I am passionate about developing web applications that display scientific data and am fascinated by unifying meteorological problems and machine learning.
-    					</div>
-    				</div>
+  <section id="aboutme" class="mast mast-dark mast-collab aboutme" data-spy="scroll" data-target="#header">
+    <div class="container-fluid">
+      <h3 class="h2">ABOUT ZACH</h3>
+      <p class="text-30">Meteorologist by day (even sometimes at night!), budding software developer and data geek by night.</p>
+      <hr class="separator" />
+      <div class="row text-left push-top-lg push-bottom-lg">
+        <div class="col-sm-4 col-state education">
+          <p class="text-xxl">I was born in Illinois and raised in Wisconsin where cheese and bratwursts reign supreme. I left my small town to become a badger at the University of Wisconsin - Madison and obtained a degree in Atmospheric Sciences, as
+            well as a certificate in Mathematics. In 2015, I left the Midwest and moved to Albany, New York to pursue my M.S. in Atmospheric Sciences.</p>
+        </div>
+        <div class="col-sm-4 col-state light">
+          <p class="text-xxl"> During my time in graduate school, I recognized the importance of computer technology and began working on my data analysis, statistics, and software development skills to improve my data analysis skills. Python became
+            my best friend during this time and it remains a favorite tool of mine in a variety of applications.</p>
+        </div>
+        <div class="col-sm-4 col-state current">
+          <p class="text-xxl">In 2017, I moved to the Lehigh Valley in Pennsylvania, where I work as a consultant meteorologist just across the border in New Jersey. I work on a variety of software and web development projects when I am not
+            forecasting. I am passionate about developing web applications that display scientific data and am fascinated by unifying meteorological problems and machine learning.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--EXPERIENCE SECTION--->
+  <section id="experience" class="mast mast-dark mast-collab experience">
+    <div class="container-fluid">
+      <h3 class="h2">EXPERIENCE</h3>
+      <p class="text-30">Listed below are descriptions of my prior work experiences.</p>
+      <hr class="separator" />
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="flipper col-sm-4">
+          <div class="card datasci-card d-flex justify-content-around flex-direction:column">
+            <div class="front">
+              <p>
+                <img class="ds_images" src="mcidas.png">
+              </p>
+              <p><strong>McIDAS Users' Services - Space Science and Engineering Center</strong></p>
+              <p>Meteorological Software Tester</p>
+              <p>Oct. 2012 - Aug. 2015</p>
+              <button class="btn btn-default bottom" type="submit">Learn More</button>
+            </div>
+            <div class="back">
+              <ul>
+                <li class="ds_item_fact">I tested McIDAS-X and McIDAS-V software on several different operating systems, including Linux, Windows, and Mac.</li>
+                <li class="ds_item_fact">Used meteorological knowledge to ensure that a variety of data types (satellite, radar, model, etc) were displayed and computed properly.</li>
+                <li class="ds_item_fact">Implemented and executed tests to check that bugs were fixed and reported new issues to the development team.</li>
+              </ul>
+              <div class="goback">
+                <p>back</p>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
+        <div class="flipper col-sm-4">
+          <div class="card datasci-card d-flex justify-content-around flex-direction:column">
+            <div class="front">
+              <p>
+                <img class="ds_images" src="albany.jpg">
+              </p>
+              <p><strong>University at Albany - SUNY</strong></p>
+              <p>Graduate Teaching Assistant</p>
+              <p>Jan. 2016 - Aug. 2017</p>
+              <button class="btn btn-default bottom" type="submit">Learn More</button>
+            </div>
+            <div class="back">
+              <ul>
+                <li class = "ds_item_fact"><strong>Graduate Teaching Assistant (Jan. 2016 - May 2017)</strong></li>
+                <li class="ds_item_fact">Assisted professors with two undergraduate courses and one graduate-level atmospheric science course.</li>
+                <li class="ds_item_fact">Held weekly office hours to answer questions about course content and communicated students’ progress to professors on a weekly or biweekly basis so that the professor may be able to assist struggling students.</li>
+                <li class="ds_item_fact">Conducted review sessions that improved students’ understanding of material and guided them on class projects.</li>
+                  </ul>
+              <div class="goback">
+                <p>back</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flipper col-sm-4">
+          <div class="card datasci-card d-flex justify-content-around flex-direction:column">
+            <div class="front">
+              <p>
+                <img class="ds_images" src="albany.jpg">
+              </p>
+              <p><strong>University at Albany - SUNY</strong></p>
+              <p>Research Assistant</p>
+              <p>Aug. 2015 - Aug. 2017</p>
+              <button class="btn btn-default bottom" type="submit">Learn More</button>
+            </div>
+            <div class="back">
+              <ul>
+                <li class = "ds_item_fact"><strong>Graduate Research Assistant (May 2016 - Aug. 2017)</strong></li>
+                <li class = "ds_item_fact">Implemented a percentile-based threshold definition to identify anomalously cold days from daily temperature records over a 6-decade period with Pandas.</li>
+                <li class = "ds_item_fact">Used linear regression and time series analyses to detect trends of climatological features regarding arctic outbreaks.</li>
+                <li class = "ds_item_fact">Used Cartopy, Numpy and Matplotlib to compute meteorological variables that illustrate arctic outbreak evolution.</li>
+                <li class="ds_item_fact">Presented results at atmospheric science conferences.</li>
+              </ul>
+              <div class="goback">
+                <p>back</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flipper col-sm-4">
+          <div class="card datasci-card d-flex justify-content-around flex-direction:column">
+            <div class="front">
+              <p>
+                <img class="ds_images" src="wwx_header_logo.png">
+              </p>
+              <p><strong>WeatherWorks LLC.</strong></p>
+              <p>Meteorologist</p>
+              <p>Sep. 2017 - Present</p>
+              <button class="btn btn-default bottom" type="submit">Learn More</button>
+            </div>
+            <div class="back">
+              <ul>
+                <li class="ds_item_fact">	Communicate vital weather-related information to clients to minimize their risk during weather-sensitive operations.</li>
+                <li class="ds_item_fact">Continuously monitor trends in numerical prediction models, radar, and satellite data to assess the quality of ongoing weather forecasts and to provide up-to-date information in oral consultation with clients.</li>
+                <li class="ds_item_fact">Prototyped a web application that used jQuery, SQL, and scientific Python libraries to interpolate and plot automated maps of predicted snowfall for clients based on data retrieved from our sent forecasts.</li>
+              </ul>
+              <div class="goback">
+                <p>back</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </section>
+  <!--PROJECTS SECTION--->
+  <section id="projects" class="mast mast-dark mast-collab projects">
+    <div class="container-fluid">
+      <h3 class="h2">PROJECTS & SKILLS USED</h3>
+      <p class="text-30">I am inspired by the process in which technology can be used to build usable scientific
+      applications or uncover hidden relations within data. As such, many of the projects that I complete in my spare
+      time are motivated by that simple inspiration.</p>
+      <br>
+      <br>
+      <p class="text-30">The panels below contains some examples of my previous and current works sorted by
+      <strong>data analysis/machine learning</strong>, <strong>scientific applications</strong>, and <strong>more</strong>.
+      Use the forward and previous buttons to navigate from project to project.</p>
+      <br>
+        <hr class="separator">
+        <button id="bck" style="height:50px; width:110px; background-color: #9e706d; color:white; border-style: solid; border-color: black; border-width:1px;">PREVIOUS</button>
+        <button id="fwd" style="height:50px; width:110px; background-color: #53795A; color:white; border-style: solid; border-color: black; border-width:1px;">FORWARD</button>
+        <br>
+        <br>
+      <div class="row d-flex-inline justify-content-center">
+        <div class="col-sm-7 projectexample" id="pg1">
+          <div class="row d-flex-inline justify-content-center">
+            <div class="col-sm-8 d-flex-inline justify-content-center">
+              <h3><strong>Machine Learning Website</strong></h3>
+                <br>
+                <h4><strong>Project Type:</strong> Website, Github Repository</h4>
+                <p>This interactive website, built using Bootstrap, plain Javascript and a pinch of jQuery,
+                    offers explanations for how many of the most popular classifiers, regressors, neural networks, and unsupervised learning
+                    algorithms are constructed. These explanations are contained within HTML generated from Jupyter notebooks. The code that
+                    the algorithms are written in is vanilla Python code, using only libraries like NumPy and SciPy to write them. They are also
+                    written in an object-oriented format, with some explanations of how each object is created for those less familiar with
+                    OOP.
+                </p>
+                <h4><strong>Technologies Used:</strong> Bootstrap, Javascript, jQuery, Python, Jupyter</h4>
+                <hr class="separator" />
+                <h4>Website Repository</h4>
 
-<!--DATA SCI SECTION--->
-          <section id="datasci" class="mast mast-dark mast-collab datasci">
-            <div class="container-fluid">
-              <h3 class="h2">DATA SCIENCE PROJECTS</h3>
-                  <div class="row">
-                    <div class="flipper col-sm-4">
-                      <div class="card datasci-card">
-                        <div class="front">
-                          <p>
-                            <img class="ds_images" src="chicago-heatwave.jpg">
-                          </p>
-                          <p>Identifying Past Heat Waves in Chicago With Machine Learning</p>
-                          <button class="btn btn-default bottom" type="submit">Learn More</button>
-                        </div>
-                        <div class="back">
-                          <ul>
-                            <li class="ds_item_fact">Several decades of daily temperature records, gridded reanalysis data, and teleconnection indices were gathered for Chicago, Illinois</li>
-                            <li class="ds_item_fact">These data sources were compiled into a training matrix and days with extremely high temperatures were identified by those where maximum temperatures were above the 95th percentile.</li>
-                            <li class="ds_item_fact">Given the rarity of these extreme days, SMOTE was used to synthetically increase the number of extreme heat days to balance out those that were non-heat days.</li>
-                            <li class="ds_item_fact">A "pipeline" was created that validated, trained, and tested several Scikit-Learn classifiers.</li>
-                            <li class="ds_item_fact">Random Forests, Logistic Regression tended to perform the most accurately.</li>
-                            <li class="ds_item_fact"><a href="https://github.com/zmurphy93/Identifying-Heat-Waves-with-ML/blob/master/Using%20Machine%20Learning%20to%20Find%20Historic%20Heat%20Waves%20in%20Chicago.ipynb" target="_blank">Link to Jupyter Notebook.</a></li>
-                          </ul>
-                          <div class="goback">
-                            <p>back</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flipper col-sm-4">
-                      <div class="card datasci-card">
-                        <div class="front">
-                          <p>
-                            <img class="ds_images" src="ode.jpg">
-                          </p>
-                          <p>Classifiying HandWritten Equations Using Convolutional Neural Networks.</p>
-                          <button class="btn btn-default bottom" type="submit">Learn More</button>
-                        </div>
-                        <div class="back">
-                          <ul>
-                            <li class="ds_item_fact">Over 400 images of handwritten mathmatical equations were gathered. Equations consisted of matrices from linear algebra, and ordinary differential equations.</li>
-                            <li class="ds_item_fact">The dataset was artificially augmented using Keras' image tranformations to allow for more training data to be available for the neural network.</li>
-                            <li class="ds_item_fact">A small convolutional neural network (CNN) was designed and heavily regularized using Batch Normalization and Dropout layers.</li>
-                            <li class="ds_item_fact">After training for 5 epochs, the network achieved 85-90% accuracy on both training and validation data.</li>
-                            <li class="ds_item_fact"><a href="https://github.com/zmurphy93/ConvNet_Math_ID/blob/master/Classifying%20Mathematical%20Expressions%20with%20Convolutional%20Neural%20Networks.ipynb" target="_blank">Link to Jupyter Notebook.</a></li>
-                          </ul>
-                          <div class="goback">
-                            <p>back</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flipper col-sm-4">
-                      <div class="card datasci-card">
-                        <div class="front">
-                          <p>
-                            <img class="ds_images" src="icestorm.png">
-                          </p>
-                          <p>Identifying Ice Storms in Pennsylvania</p>
-                          <button class="btn btn-default bottom" type="submit">Learn More</button>
-                        </div>
-                        <div class="back">
-                          <ul>
-                            <li class="ds_item_fact">This project sought to identify regions afflicted by ice storms that were identified from NCEI's Storm Data Publication. </li>
-                            <li class="ds_item_fact">The project utilized Shapely and Geopandas to classify NARR grid points as belonging to an ice storm region or not.</li>
-                            <li class="ds_item_fact">Classifiers were trained and optimized using grid search and achieved AUC scores of 0.80-0.901 on unseen data.</li>
-                            <li class="ds_item_fact"><a href="https://github.com/zmurphy93/IceStormDetection/blob/master/Pennsylvania_IceStorms.ipynb" target="_blank">Link to Jupyter Notebook.</a></li>
-                          </ul>
-                          <div class="goback">
-                            <p>back</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-<!--MACHINE LEARNING SECTION--->
-          <!-- <section id="ml" class="mast mast-dark mast-collab ml">
-          <div class="container-fluid">
-          <h3 class="h2">MACHINE LEARNING ALGORITHMS FROM THE GROUND UP</h3>
-          <div class="row">
-              <div class="col-xs-4 alg-type">
-                  <p class="text-center alg-name"><strong>Supervised Learning</strong></p><br>
-                  <a href="https://zmurphy93.github.io/classifiers_regressors.html">
-                    <img src="images/classifier_image.png" class="rounded-circle person" width="255" height="255">
-                  </a>
-                  </div>
-              <div class="col-xs-4 alg-type">
-                <p class="text-center alg-name"><strong>Unsupervised Learning</strong></p><br>
-                <a href="https://zmurphy93.github.io/unsupervised.html">
-                  <img src="images/clustering_image.png" class="rounded-circle person"  width="255" height="255">
-                </a>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex-inline justify-content-center">
+          <div class="col-sm-7 projectexample" id="pg2">
+            <div class="row d-flex-inline justify-content-center">
+              <div class="col-sm-8 d-flex-inline justify-content-center">
+                <h3><strong>Heat Wave Identification</strong></h3>
+                  <br>
+                  <h4><strong>Project Type:</strong> Data Science Study</h4>
+                  <p>Reanalysis data and daily temperature records from Chicago are used to predict the occurrence of anomalously
+                    hot days in Chicago. Anomalously hot days were identified by using any day where the maximum temperature exceeded the
+                      95th precentile for that day's high temperatures. Several classifiers were trained on various subsets of features to determine
+                      a relationship between commonly used meteorological variables and the occurrence of anomalously hot weather. Future opportunities
+                      are also explored with the results of this study.
+                    </thead>
+                  </p>
+                  <h4><strong>Technologies Used:</strong> Pandas, Scikit-Learn, Xarray, Metpy, Python, Jupyter</h4>
+                  <hr class="separator" />
+                  <h4>Notebooks</h4>
                 </div>
               </div>
             </div>
+          </div>
+    </div>
+  </section>
+  <!--CONED SECTION--->
+  <!-- <section id="coned" class="mast mast-dark mast-collab coned">
+    <div class="container-fluid">
+      <h3 class="h2">CONTINUING EDUCATION</h3>
+      <p class="text-30">Continously learning, continuously growing. I am a believer that learning does not stop when
+      you receive your diploma, but is something that you do for the rest of your life. Below are some of the various
+      courses and lectures that I have completed in fields ranging from web development to machine learning and much more.</p>
+      <hr class="separator" />
+      <div class="row d-flex-inline justify-content-center">
+        <div class="col-sm-8 coneducation">
+            <div class="row d-flex justify-content-center">
+              <h3><strong>Tutorials and Courses Completed</strong></h3>
+              </div>
+                <br>
+            <div class="row d-flex justify-content-center">
+                <h4><strong>Data Science, Analytics, and Machine Learning</strong></h4>
+                <ul>
+                  <li>
+                </div>
+                <br>
+            <div class="row d-flex justify-content-center">
+                <h4><strong>Web Development</strong></h4>
+              </div>
+                <br>
+            <div class="row d-flex justify-content-center">
+                <h4><strong>Other</strong></h4>
+              </div>
+            </div>
+          </div>
         </div>
-      </section> -->
-    </body>
-    </html>
-  </body>
+    </div>
+  </section> -->
+  <!--CONTACT SECTION--->
+  <section id="contact" class="mast mast-dark mast-collab contact">
+    <div class="container-fluid">
+      <h3 class="h2">CONTACT INFO</h3>
+      <p class="text-30">Want to learn more about me or just want to chat? Feel free to reach out!</p>
+      <br>
+      <p class="text-30">Email: zmurphy93@gmail.com
+        <hr class="separator">
+        <br>
+        <br>
+        <center>
+            <h3 style="color: white; font-weight:400px;">LINKEDIN & GITHUB</h3>
+            <div class="d-inline-flex justify-content-around">
+            <div class="row">
+                    <a href="https://www.linkedin.com/in/zacharybmurphy/" class="fa fa-linkedin" style="margin-right:25px;"></a>
+                    <a href="https://github.com/zmurphy93" class="fa fa-github"style="margin-left:25px;"></a>
+                  </div>
+                </div>
+              <br>
+              <br>
+            </center>
+            <br>
+            <br>
+          </div>
+          <br>
+          <br>
+        </center>
+    </div>
+    <br>
+    <br>
+  </section>
+</body>
 </html>
